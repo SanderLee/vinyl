@@ -1,5 +1,6 @@
 package ee.leemet.vinyl.controller
 
+import ee.leemet.vinyl.controller.json.VinylJson
 import ee.leemet.vinyl.service.VinylService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -10,5 +11,5 @@ import org.springframework.web.bind.annotation.RestController
 class VinylController(private val vinylService: VinylService) {
 
     @GetMapping("/wishlist")
-    fun getVinylWishlist() = vinylService.getVinylWishlist()
+    fun getVinylWishlist() = vinylService.getVinylWishlist().map { VinylJson.fromVinyl(it) }
 }

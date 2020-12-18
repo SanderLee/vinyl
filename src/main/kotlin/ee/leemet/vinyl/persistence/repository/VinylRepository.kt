@@ -1,15 +1,9 @@
 package ee.leemet.vinyl.persistence.repository
 
-import ee.leemet.vinyl.model.Vinyl
+import com.googlecode.objectify.ObjectifyService.ofy
+import ee.leemet.vinyl.persistence.entity.VinylEntity
 
 class VinylRepository {
     fun getVinylWishlist() =
-        listOf(
-            Vinyl("vinüül 1"),
-            Vinyl("Vibyl 2"),
-            Vinyl("uus"),
-            Vinyl("kskdfkskfskfksd"),
-            Vinyl("SEE TÖÖTAB RAISK"),
-            Vinyl("IKKA VEEL RSK"),
-        )//TODO
+        ofy().load().type(VinylEntity::class.java).list().map { it.toVinyl() }
 }

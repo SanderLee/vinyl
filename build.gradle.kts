@@ -16,6 +16,7 @@ repositories {
 }
 
 dependencies {
+	implementation("com.googlecode.objectify:objectify:6.0.7")
 	implementation("org.springframework:spring-context-support")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
