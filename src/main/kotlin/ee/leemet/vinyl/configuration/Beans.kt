@@ -1,6 +1,5 @@
 package ee.leemet.vinyl.configuration
 
-import ee.leemet.vinyl.controller.VinylController
 import ee.leemet.vinyl.persistence.repository.VinylRepository
 import ee.leemet.vinyl.service.VinylService
 import org.springframework.context.ApplicationContextInitializer
