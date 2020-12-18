@@ -9,6 +9,7 @@ class VinylRepository {
             Vinyl("Vibyl 2"),
             Vinyl("uus"),
             Vinyl("kskdfkskfskfksd"),
-            Vinyl("SEE TÖÖTAB RAISK")
+            Vinyl("SEE TÖÖTAB RAISK"),
+            Vinyl("IKKA VEEL RSK"),
         )//TODO
 }
