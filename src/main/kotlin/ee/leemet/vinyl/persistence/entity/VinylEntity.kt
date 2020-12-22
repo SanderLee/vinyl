@@ -12,6 +12,7 @@ data class VinylEntity(
     var coverArtUrl: String? = null
 ) {
     fun toVinyl() = Vinyl(
+        id = id,
         title = title,
         artist = artist,
         coverArtUrl = coverArtUrl
